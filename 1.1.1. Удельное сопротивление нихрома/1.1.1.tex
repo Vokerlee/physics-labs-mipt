@@ -1,103 +1,103 @@
 \documentclass[a4paper, 12pt]{article} % тип документа
 
 %%%Библиотеки
-	%\usepackage[warn]{mathtext}	
-	\usepackage[T2A]{fontenc}   %Кодировка
-	\usepackage[utf8]{inputenc} %Кодировка исходного текста
-	\usepackage[english, russian]{babel} %Локализация и переносы
-	\usepackage{caption}
-	\usepackage{gensymb}
-	%\usepackage{listings}
-	\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-	%\usepackage[warn]{mathtext}
-	%\usepackage[mathscr]{eucal}
-	%\usepackage{wasysym}
-	%\usepackage{graphicx} %Вставка картинок правильная
-	%\usepackage{pgfplots}
-	\usepackage{indentfirst}
-	%\usepackage{float}    %Плавающие картинки
-	%\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
-	\usepackage{fancyhdr}  %Загрузим пакет
-	%\usepackage{lscape}
-	%\usepackage{xcolor}
-	%\usepackage[normalem]{ulem}
-	
-	\usepackage{titlesec}
-	\titlelabel{\thetitle.\quad}
+    %\usepackage[warn]{mathtext}	
+    \usepackage[T2A]{fontenc}   %Кодировка
+    \usepackage[utf8]{inputenc} %Кодировка исходного текста
+    \usepackage[english, russian]{babel} %Локализация и переносы
+    \usepackage{caption}
+    \usepackage{gensymb}
+    %\usepackage{listings}
+    \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+    %\usepackage[warn]{mathtext}
+    %\usepackage[mathscr]{eucal}
+    %\usepackage{wasysym}
+    %\usepackage{graphicx} %Вставка картинок правильная
+    %\usepackage{pgfplots}
+    \usepackage{indentfirst}
+    %\usepackage{float}    %Плавающие картинки
+    %\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
+    \usepackage{fancyhdr}  %Загрузим пакет
+    %\usepackage{lscape}
+    %\usepackage{xcolor}
+    %\usepackage[normalem]{ulem}
+    
+    \usepackage{titlesec}
+    \titlelabel{\thetitle.\quad}
 
-	\usepackage{hyperref}
+    \usepackage{hyperref}
 
 %%%Конец библиотек
 
 %%%Настройка ссылок
-	\hypersetup
-	{
-		colorlinks = true,
-		linkcolor  = blue,
-		filecolor  = magenta,
-		urlcolor   = blue
-	}
+    \hypersetup
+    {
+        colorlinks = true,
+        linkcolor  = blue,
+        filecolor  = magenta,
+        urlcolor   = blue
+    }
 %%%Конец настройки ссылок
 
 
 %%%Настройка колонтитулы
-	\pagestyle{fancy}
-	\fancyhead{}
-	\fancyhead[L]{1.1.1}
-	\fancyhead[R]{Глаз Роман, группа Б01-007}
-	\fancyfoot[C]{\thepage}
+    \pagestyle{fancy}
+    \fancyhead{}
+    \fancyhead[L]{1.1.1}
+    \fancyhead[R]{Глаз Роман, группа Б01-007}
+    \fancyfoot[C]{\thepage}
 %%%конец настройки колонтитулы
 
 
 
 \begin{document}
-						%%%%Начало документа%%%%
+                        %%%%Начало документа%%%%
 
 
 %%%Начало титульника
 \begin{titlepage}
 
-	\newpage
-	\begin{center}
-		\normalsize Московский физико-технический институт \\(госудраственный университет)
-	\end{center}
+    \newpage
+    \begin{center}
+        \normalsize Московский физико-технический институт \\(госудраственный университет)
+    \end{center}
 
-	\vspace{6em}
+    \vspace{6em}
 
-	\begin{center}
-		\Large Лабораторная работа по общему курсу физики\\Механика
-	\end{center}
+    \begin{center}
+        \Large Лабораторная работа по общему курсу физики\\Механика
+    \end{center}
 
-	\vspace{1em}
+    \vspace{1em}
 
-	\begin{center}
-		\Large \textbf{1.1.1. Удельное сопротивление нихрома}
-	\end{center}
+    \begin{center}
+        \Large \textbf{1.1.1. Удельное сопротивление нихрома}
+    \end{center}
 
-	\vspace{2em}
+    \vspace{2em}
 
-	\begin{center}
-		\large Глаз Роман Сергеевич \\
-		Группа Б01-007
-	\end{center}
+    \begin{center}
+        \large Глаз Роман Сергеевич \\
+        Группа Б01-007
+    \end{center}
 
-	\vspace{\fill}
+    \vspace{\fill}
 
-	\begin{center}
-	Долгопрудный \\2021
-	\end{center}
-	
+    \begin{center}
+    Долгопрудный \\2021
+    \end{center}
+    
 \end{titlepage}
 %%%Конец Титульника
 
 
 
 %%%Настройка оглавления и нумерации страниц
-	\thispagestyle{empty}
-	\newpage
-	\tableofcontents
-	\newpage
-	\setcounter{page}{1}
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+    \newpage
+    \setcounter{page}{1}
 %%%Настройка оглавления и нумерации страниц
 
 
@@ -125,7 +125,7 @@
 
 Сопротивление проволоки можно искать с помощью двух различных (очень схожих) электрических схем:
 \begin{center}
-	{\includegraphics[width=11cm]{1}}
+    {\includegraphics[width=11cm]{1}}
 \end{center}
 
 На данных схемах $R_V$ и $R_A$ -- сопротивления вольтметра и амперметра соответственно, а $R$ -- сопротивление реостата.
@@ -263,7 +263,7 @@ $U$, В & $I$, А & $\Delta U \cdot 10^{-9}$, В & $U$, В & $I$, А & $\Delta U
 Строим графики зависимостей $U(I)$ для всех для всех трёк длин отрезков проволоки, проводя прямые через экспериментальные точки. Из графиков видно, что нет различия между значениями, полученными при возрастании и при уменьшении тока (нет петли Гистерезиса).
 
 \begin{center}
-	{\includegraphics[width=14cm]{2}}
+    {\includegraphics[width=14cm]{2}}
 \end{center}
 
 Далее снимаем данные сопротивлений пролоки при разных длинах с помощью моста, записываем в таблицу.
