@@ -1,103 +1,103 @@
 \documentclass[a4paper, 12pt]{article} % тип документа
 
 %%%Библиотеки
-	%\usepackage[warn]{mathtext}	
-	\usepackage[T2A]{fontenc}   %Кодировка
-	\usepackage[utf8]{inputenc} %Кодировка исходного текста
-	\usepackage[english, russian]{babel} %Локализация и переносы
-	\usepackage{caption}
-	\usepackage{gensymb}
-	%\usepackage{listings}
-	\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-	%\usepackage[warn]{mathtext}
-	%\usepackage[mathscr]{eucal}
-	%\usepackage{wasysym}
-	%\usepackage{graphicx} %Вставка картинок правильная
-	%\usepackage{pgfplots}
-	\usepackage{indentfirst}
-	%\usepackage{float}    %Плавающие картинки
-	%\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
-	\usepackage{fancyhdr}  %Загрузим пакет
-	%\usepackage{lscape}
-	%\usepackage{xcolor}
-	%\usepackage[normalem]{ulem}
-	
-	\usepackage{titlesec}
-	\titlelabel{\thetitle.\quad}
+    %\usepackage[warn]{mathtext}	
+    \usepackage[T2A]{fontenc}   %Кодировка
+    \usepackage[utf8]{inputenc} %Кодировка исходного текста
+    \usepackage[english, russian]{babel} %Локализация и переносы
+    \usepackage{caption}
+    \usepackage{gensymb}
+    %\usepackage{listings}
+    \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+    %\usepackage[warn]{mathtext}
+    %\usepackage[mathscr]{eucal}
+    %\usepackage{wasysym}
+    %\usepackage{graphicx} %Вставка картинок правильная
+    %\usepackage{pgfplots}
+    \usepackage{indentfirst}
+    %\usepackage{float}    %Плавающие картинки
+    %\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
+    \usepackage{fancyhdr}  %Загрузим пакет
+    %\usepackage{lscape}
+    %\usepackage{xcolor}
+    %\usepackage[normalem]{ulem}
+    
+    \usepackage{titlesec}
+    \titlelabel{\thetitle.\quad}
 
-	\usepackage{hyperref}
+    \usepackage{hyperref}
 
 %%%Конец библиотек
 
 %%%Настройка ссылок
-	\hypersetup
-	{
-		colorlinks = true,
-		linkcolor  = blue,
-		filecolor  = magenta,
-		urlcolor   = blue
-	}
+    \hypersetup
+    {
+        colorlinks = true,
+        linkcolor  = blue,
+        filecolor  = magenta,
+        urlcolor   = blue
+    }
 %%%Конец настройки ссылок
 
 
 %%%Настройка колонтитулы
-	\pagestyle{fancy}
-	\fancyhead{}
-	\fancyhead[L]{1.1.6}
-	\fancyhead[R]{Глаз Роман, группа Б01-007}
-	\fancyfoot[C]{\thepage}
+    \pagestyle{fancy}
+    \fancyhead{}
+    \fancyhead[L]{1.1.6}
+    \fancyhead[R]{Глаз Роман, группа Б01-007}
+    \fancyfoot[C]{\thepage}
 %%%конец настройки колонтитулы
 
 
 
 \begin{document}
-						%%%%Начало документа%%%%
+                        %%%%Начало документа%%%%
 
 
 %%%Начало титульника
 \begin{titlepage}
 
-	\newpage
-	\begin{center}
-		\normalsize Московский физико-технический институт \\(госудраственный университет)
-	\end{center}
+    \newpage
+    \begin{center}
+        \normalsize Московский физико-технический институт \\(госудраственный университет)
+    \end{center}
 
-	\vspace{6em}
+    \vspace{6em}
 
-	\begin{center}
-		\Large Лабораторная работа по общему курсу физики\\Механика
-	\end{center}
+    \begin{center}
+        \Large Лабораторная работа по общему курсу физики\\Механика
+    \end{center}
 
-	\vspace{1em}
+    \vspace{1em}
 
-	\begin{center}
-		\Large \textbf{1.1.6. Осциллограф}
-	\end{center}
+    \begin{center}
+        \Large \textbf{1.1.6. Осциллограф}
+    \end{center}
 
-	\vspace{2em}
+    \vspace{2em}
 
-	\begin{center}
-		\large Глаз Роман Сергеевич \\
-		Группа Б01-007
-	\end{center}
+    \begin{center}
+        \large Глаз Роман Сергеевич \\
+        Группа Б01-007
+    \end{center}
 
-	\vspace{\fill}
+    \vspace{\fill}
 
-	\begin{center}
-	Долгопрудный \\2021
-	\end{center}
-	
+    \begin{center}
+        Долгопрудный \\2021
+    \end{center}
+    
 \end{titlepage}
 %%%Конец Титульника
 
 
 
 %%%Настройка оглавления и нумерации страниц
-	\thispagestyle{empty}
-	\newpage
-	\tableofcontents
-	\newpage
-	\setcounter{page}{1}
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+    \newpage
+    \setcounter{page}{1}
 %%%Настройка оглавления и нумерации страниц
 
 \textbf{Цель работы:} ознаковмление с устройством работы осциллографа и изучение его основных характеристик.\\
@@ -109,7 +109,7 @@
 Основой осциллографа является электроннная лучевая трубка. Устройство электронной лучевой трубки осциллографа:
 
 \begin{center}
-	\includegraphics[width=\textwidth]{1}
+    \includegraphics[width=\textwidth]{1}
 \end{center}
 
 Здесь $1$ -- подогреватель катода, $2$ -- катод, $3$ -- модулятор, $4$ -- первый (фокусирующий)
@@ -121,13 +121,12 @@
 На пути пучка электронов находятся 2 конденстора, электрическое поле в которых взаимно ортогонально, чтобы отклонять пучок в двух взаимных направлениях декартовой системы координат. Регулируя напряжения на конденсаторах, можно определить положения пучка электронов на экране.
 
 \begin{center}
-	\includegraphics[width=11cm]{2}
+    \includegraphics[width=11cm]{2}
 \end{center}
 
 Рассматривая движение пучка в электрических полях пластин можно вывести смещение $h$ электронного пятна на экране осциллографа: ${ h =\frac{l_1L}{2dU_\alpha}\cdot U_y}$, где ${ l_1}$ -- длина пластин, ${ L}$ - расстояние от середины пластин до экрана, $d$ -- расстояние между пластинами, ${ U_\alpha} $ -- ускоряющее напряжение на втором аноде.
 
 Чувствительность ЭЛТ к напряжению: ${ k =\frac{l_1L}{2dU_\alpha}}$. Обе последние формулы применимы тогда, когда за время пролёта пучка напряжения на конденсаторах практически не меняется. В итоге получается, что смещение частицы в выбранном направлении прямо пропорционально напряжению на конденсаторе.
-
 
 
 Подаваемое на вертикально отклоняющие пластины напряжение должно быть пропорционально самому сигналу:  ${ U_y(t) = U_{0y}+k_{yu}U_c(t).}$\\
@@ -138,7 +137,7 @@ ${ U_{0y}}$ -- постоянное напряжение, определяющи
 Напряжение пилообразной формы, вырабатываемое генератором развёртки осциллографом, изображено на рисунке. Во время прямого хода луч проходить через весь экран слева направо, после чего напряжение сбрасывается во время обратного хода. Далее после времени ожидания снова появляется луч на экране. Общее время ожидания и обратного хода называется временем блокировки.
 
 \begin{center}
-	\includegraphics[width=14cm]{3}
+    \includegraphics[width=14cm]{3}
 \end{center}
 
 При наблюдении периодических быстропротекающих процессов важно зафиксировать изображение на экране, для чего используется синхронизация: для неподвижного изображения необходимо, чтобы период развёртки был кратен периоду излучаемого сигнала, что можно сделать, "навязав" свой период генератору развёртки (для генератора развёртки есть несколько режимов на осциллографе).
@@ -218,8 +217,8 @@ $f_{\text{ЗГ}}$, кГц & $T$, дел & мc/дел & $T$, мс & $f$, кГц &
  \hline
  $lgf$ & 7,11 & 7,176 & 7,2 & 7,24 & 7,30 & 7,324 & 7,35 & 7,38 & 7,42 & 7,455 \\  
  \hline  
- \end{tabular}
- \end{center}
+\end{tabular}
+\end{center}
   
 Заметим, что при очень низких частотах отношения напряжений равно единице, поэтому в таблицу такие данные мы не записали. 
 
@@ -239,14 +238,14 @@ $f_{\text{ЗГ}}$, кГц & $T$, дел & мc/дел & $T$, мс & $f$, кГц &
  \hline 
  $lgf$ & 7,17 & 7,21 & 7,22 & 7,24 & 7,27 & 7,3 & 7,33 & 7,35 & 7,37 & 7,40 \\  
  \hline
- \end{tabular}
+\end{tabular}
  
 \textbf{ }
 
 Построим в единых осях графики зависимостей коэффициента ослабления сигнала от частоты -- графики практически совпадают.
 
 \begin{center}
-	\includegraphics[width=13cm]{15}
+    \includegraphics[width=13cm]{15}
 \end{center}
 
 Возможное различие в режимах -- присутствие конденсатора в закрытом режиме сигнала для ослабления постоянной составляющей напряжения.\\
@@ -260,30 +259,30 @@ $f_{\text{ЗГ}}$, кГц & $T$, дел & мc/дел & $T$, мс & $f$, кГц &
 \[f = 50 \text{ Гц}\]
 
 \begin{center}
-	\includegraphics[width=7cm]{4}
+    \includegraphics[width=7cm]{4}
 \end{center}
 
 \[f = 10 \text{ кГц}\]
 
 \begin{center}
-	\includegraphics[width=10cm]{5}
+    \includegraphics[width=10cm]{5}
 \end{center}
 
 \[f = 100 \text{ кГц}\]
 
 \begin{center}
-	\includegraphics[width=10cm]{6}
+    \includegraphics[width=10cm]{6}
 \end{center}
 
 \newpage
 \[f = 1 \text{ МГц}\]
 \begin{center}
-	\includegraphics[width=9cm]{7}
+    \includegraphics[width=9cm]{7}
 \end{center}
 
 \[f = 5 \text{ МГц}\]
 \begin{center}
-	\includegraphics[width=9cm]{8}
+    \includegraphics[width=9cm]{8}
 \end{center}
 
 Можно заметить, что наибольшие искажения наблюдаются при очень малых и больших частотах. 
@@ -347,7 +346,7 @@ $arcsin | \frac{y_0}{A_y}|$ & 0,08 & 0,16 & 0,24 & 0,34 & 0,50 & 0,65 & 0,92 & 1
 \end{center}
 
 \begin{center}
-	\includegraphics[width=14cm]{13}
+    \includegraphics[width=14cm]{13}
 \end{center}
 
 При низких частотах наблюдать разность фаз невозможно, так как эллипс остаётся вырожденным и расстояния нельзя посчитать. Поэтому разность фаз можно наблюдать только начиная с частот порядка $10$ кГц.
@@ -362,7 +361,7 @@ $arcsin | \frac{y_0}{A_y}|$ & 0,08 & 0,16 & 0,24 & 0,34 & 0,50 & 0,65 & 0,92 & 1
 Изменяя $f_x$, получим устойчивые фигуры для нескольких целочисленных отношений частот.
 
 \begin{center}
-	\includegraphics[width=14cm]{11}
+    \includegraphics[width=14cm]{11}
 \end{center}
 
 На рисунках приведены фигуры Лиссажу со следующими отношениями частот соответственно: $1 : 1$, $1 : 5$, $3 : 1$, $2 : 1$.
@@ -376,7 +375,7 @@ $arcsin | \frac{y_0}{A_y}|$ & 0,08 & 0,16 & 0,24 & 0,34 & 0,50 & 0,65 & 0,92 & 1
 Измерим амплитудно-частотные характеристики $RC$ цепочек, представленных на схемах:
 
 \begin{center}
-	\includegraphics[width=12cm]{12}
+    \includegraphics[width=12cm]{12}
 \end{center}
 
 Сопротивление реостата в схемах равно $3$ кОм, ёмкость конденсатора равна $0,01$ мкФ. Для удобства посчитаем величину $\tau = RC = 0,03$ мс. 
@@ -403,8 +402,8 @@ $arcsin | \frac{y_0}{A_y}|$ & 0,08 & 0,16 & 0,24 & 0,34 & 0,50 & 0,65 & 0,92 & 1
  \hline 
  $f$, кГц & 9,1 & 11,3 & 14,6 & 19,5 & 29 & 53 &&&& \\ 
  \hline 
- \end{tabular}
- \end{center}
+\end{tabular}
+\end{center}
  
 
 Дифференцирующая цепочка:
@@ -423,11 +422,11 @@ $arcsin | \frac{y_0}{A_y}|$ & 0,08 & 0,16 & 0,24 & 0,34 & 0,50 & 0,65 & 0,92 & 1
  \hline 
  $f$, кГц & 3 & 2,4 & 1,9 & 1,4 & 1 & 0,6 &&&& \\ 
  \hline 
- \end{tabular}
- \end{center}
+\end{tabular}
+\end{center}
  
 \begin{center}
-	\includegraphics[width=14cm]{14}
+    \includegraphics[width=14cm]{14}
 \end{center}
  
  На основе данных, занесённых в таблицу, строим экспериментальные и теоретические графики. Видно, что теоретические и экспериментальные зависимости почти совпадают, значит формулы для амлитуды справедливы (на графике их тяжело различить, поэтому через теоретические и экспериментальные графики проведена одна аппроксимирующая прямая).
