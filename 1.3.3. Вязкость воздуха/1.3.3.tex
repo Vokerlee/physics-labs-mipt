@@ -1,107 +1,106 @@
 \documentclass[a4paper, 12pt]{article} % тип документа
 
 %%%Библиотеки
-	%\usepackage[warn]{mathtext}	
-	\usepackage[T2A]{fontenc}   %Кодировка
-	\usepackage[utf8]{inputenc} %Кодировка исходного текста
-	\usepackage[english, russian]{babel} %Локализация и переносы
-	\usepackage{caption}
-	\usepackage{gensymb}
-	%\usepackage{listings}
-	\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-	%\usepackage[warn]{mathtext}
-	%\usepackage[mathscr]{eucal}
-	%\usepackage{wasysym}
-	%\usepackage{graphicx} %Вставка картинок правильная
-	%\usepackage{pgfplots}
-	\usepackage{indentfirst}
-	%\usepackage{float}    %Плавающие картинки
-	%\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
-	\usepackage{fancyhdr} %Загрузим пакет
-	%\usepackage{lscape}
-	%\usepackage{xcolor}
-	%\usepackage[normalem]{ulem}
-	
-	\usepackage{titlesec}
-	\titlelabel{\thetitle.\quad}
+    %\usepackage[warn]{mathtext}	
+    \usepackage[T2A]{fontenc}   %Кодировка
+    \usepackage[utf8]{inputenc} %Кодировка исходного текста
+    \usepackage[english, russian]{babel} %Локализация и переносы
+    \usepackage{caption}
+    \usepackage{gensymb}
+    %\usepackage{listings}
+    \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+    %\usepackage[warn]{mathtext}
+    %\usepackage[mathscr]{eucal}
+    %\usepackage{wasysym}
+    %\usepackage{graphicx} %Вставка картинок правильная
+    %\usepackage{pgfplots}
+    \usepackage{indentfirst}
+    %\usepackage{float}    %Плавающие картинки
+    %\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
+    \usepackage{fancyhdr} %Загрузим пакет
+    %\usepackage{lscape}
+    %\usepackage{xcolor}
+    %\usepackage[normalem]{ulem}
+    
+    \usepackage{titlesec}
+    \titlelabel{\thetitle.\quad}
 
-	\usepackage{hyperref}
+    \usepackage{hyperref}
 
 %%%Конец библиотек
 
 %%%Настройка ссылок
-	\hypersetup
-	{
-		colorlinks = true,
-		linkcolor  = blue,
-		filecolor  = magenta,
-		urlcolor   = blue
-	}
+    \hypersetup
+    {
+        colorlinks = true,
+        linkcolor  = blue,
+        filecolor  = magenta,
+        urlcolor   = blue
+    }
 %%%Конец настройки ссылок
 
 
 %%%Настройка колонтитулы
-	\pagestyle{fancy}
-	\fancyhead{}
-	\fancyhead[L]{1.3.3}
-	\fancyhead[R]{Глаз Роман, группа Б01-007}
-	\fancyfoot[C]{\thepage}
+    \pagestyle{fancy}
+    \fancyhead{}
+    \fancyhead[L]{1.3.3}
+    \fancyhead[R]{Глаз Роман, группа Б01-007}
+    \fancyfoot[C]{\thepage}
 %%%конец настройки колонтитулы
 
 
 
 \begin{document}
-						%%%%Начало документа%%%%
+                        %%%%Начало документа%%%%
 
 
 %%%Начало титульника
 \begin{titlepage}
 
-	\newpage
-	\begin{center}
-		\normalsize Московский физико-технический институт \\(госудраственный университет)
-	\end{center}
+    \newpage
+    \begin{center}
+        \normalsize Московский физико-технический институт \\(госудраственный университет)
+    \end{center}
 
-	\vspace{6em}
+    \vspace{6em}
 
-	\begin{center}
-		\Large Лабораторная работа по общему курсу физики\\Термодинамика и молекулярная физика
-	\end{center}
+    \begin{center}
+        \Large Лабораторная работа по общему курсу физики\\Термодинамика и молекулярная физика
+    \end{center}
 
-	\vspace{1em}
+    \vspace{1em}
 
-	\begin{center}
-		\Large \textbf{1.3.3. Измерение вязкости воздуха по течению в тонких трубках }
-	\end{center}
+    \begin{center}
+        \Large \textbf{1.3.3. Измерение вязкости воздуха по течению в тонких трубках }
+    \end{center}
 
-	\vspace{2em}
+    \vspace{2em}
 
-	\begin{center}
-		\large Глаз Роман Сергеевич\\
-		Группа Б01-007
-	\end{center}
+    \begin{center}
+        \large Глаз Роман Сергеевич\\
+        Группа Б01-007
+    \end{center}
 
-	\vspace{\fill}
+    \vspace{\fill}
 
-	\begin{center}
-	Долгопрудный \\2021
-	\end{center}
-	
+    \begin{center}
+        Долгопрудный \\2021
+    \end{center}
+    
 \end{titlepage}
 %%%Конец Титульника
 
 
-
 %%%Настройка оглавления и нумерации страниц
-	\thispagestyle{empty}
-	\newpage
-	\tableofcontents
-	\newpage
-	\setcounter{page}{1}
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+    \newpage
+    \setcounter{page}{1}
 %%%Настройка оглавления и нумерации страниц
 
 
-					%%%%%%Начало работы с текстом%%%%%%
+                    %%%%%%Начало работы с текстом%%%%%%
 
 \textbf{Цель работы:} экспериментально исследовать свойства течения газов по тонким трубкам при различных числах Рейнольдса; выявить область применимости закона Пуазейля и с его помощью определить коэффициент вязкости воздуха.\\
 
@@ -116,7 +115,7 @@
 Характер движения газа (или жидкости) в трубке определяется безразмерным числом Рейнольдса:
 
 \begin{equation}
-	Re = \dfrac{\upsilon r \rho}{\eta} \text{  } \text{  } \text{  }
+    Re = \dfrac{\upsilon r \rho}{\eta} \text{  } \text{  } \text{  }
 \end{equation}
 
 где $\upsilon$ - скорость потока, $r$ - радиус трубки, $\rho$ - плотность движущейся среды, $\eta$ - вязкость. В гладких трубах круглого сечения переход от ламинарного движения к турбулентному происходит при $Re \approx 1000$.
@@ -124,7 +123,7 @@
 При ламинарном течении объем газа $V$, протекающий за время $t$ по трубе длиной $l$, определяется формулой Пуазейля:
 
 \begin{equation}
-	Q_V = \dfrac{\pi r^4}{8 l \eta}(P_1 - P_2) \text{  } \text{  } \text{  }
+    Q_V = \dfrac{\pi r^4}{8 l \eta}(P_1 - P_2) \text{  } \text{  } \text{  }
 \end{equation}
 
 В этой формуле $P_1 - P_2$ - разность давлений в двух выбранных сечениях $1$ и $2$, расстояние между которыми равно $l$. Велечину $Q$ обычно называют расходом. Формула (2) позволяет определять вязкость газа по его расходу.
@@ -132,13 +131,13 @@
 Отметим условия, при которых справедлива формула (2). Прежде всего необходимо, чтобы с достаточным запасом выполнялось неравенство $Re < 1000$. Необходимо также, чтобы при течении не происходило существенного изменения удельного объема газа (при выводе формулы удельный объем считался постоянным). Для жидкости это предположение выполняется практически всегда, а для газа -- лишь в тех случаях, когда перепад давлений вдоль трубки мал по сравнению с самим давлением. В нашем случае давление газа равно атмосферному ($10^3$ см вод. ст.), а перепад давлений составляет не более 10 см вод. ст., то есть менее $1\%$ от атмосферного. Формула (2) выводится для участков трубки, на которых закон распределения скоростей газа по сечению не меняется при движении вдоль потока.
 
 \begin{center}
-		\includegraphics[width = 0.6\textwidth]{133_1}
+    \includegraphics[width = 0.6\textwidth]{133_1}
 \end{center}
 
 При втекании газа в трубку из большого резервуара скорости слоев вначале постоянны по всему сечению (рис. 1). По мере продвижения газа по трубке картина распределения скоростей меняется, так как сила трения о стенку тормозит прилежащие к ней слои. Характерное для ламинарного течения параболическое распределение скоростей устанавливается на некотором расстоянии $a$ от входа в трубку, которое зависит от радиуса трубки $r$ и числа Рейнольдса по формуле
 
 \begin{equation}
-	l \approx  0,2 r \cdot Re \text{ } \text{ } \text{ }
+    l \approx  0,2 r \cdot Re \text{ } \text{ } \text{ }
 \end{equation}
 
 Градиент давления на участке формирования потока оказывается большим, чем на участке с установившимся ламинарным течением, что позволяет разделить эти участки экспериментально. Формула (3) дает возможность оценить длину участка формирования.
@@ -159,7 +158,7 @@
 Найдём расход газа, при котором число Рейнольдса становится критическим. Для предварительной оценки примем значение взякости равным $\eta = 2 \cdot 10^{-5}$ $\text{Па} \cdot \text{с}$.
 
 \begin{equation}
-	Q_{cr} = u_{cr} \frac{\pi d^2}{4} = \frac{Re \cdot \eta}{\rho d} \frac{\pi d^2}{4} = Re \cdot \eta_{cr} \frac{\pi d}{4 \rho } = 0,065 \; \text{л/с}
+    Q_{cr} = u_{cr} \frac{\pi d^2}{4} = \frac{Re \cdot \eta}{\rho d} \frac{\pi d^2}{4} = Re \cdot \eta_{cr} \frac{\pi d}{4 \rho } = 0,065 \; \text{л/с}
 \end{equation}
 
 Здесь была взята величина плотности воздуха при нормальных условиях $\rho = 1,2 \; \text{кг}/\text{м}^3$.
@@ -167,7 +166,7 @@
 Теперь из найденного насхода и формулы Пуазёйля найдём критическое давление:
 
 \begin{equation}
-	P_{cr} = \frac{8 \eta l}{\pi r^4} Q_{cr} \simeq 40 \; \text{Па}
+    P_{cr} = \frac{8 \eta l}{\pi r^4} Q_{cr} \simeq 40 \; \text{Па}
 \end{equation}
 
 В качестве значения длины было взято значение $l = 0,5$ м.
@@ -181,15 +180,15 @@
 Для начала определим, какими должны быть значения $\Delta V$ и $\Delta t$, чтобы рассчитанное значение расхода газа имело погрешность не более $1\%$.
  
 \begin{equation}
-	Q = \frac{\delta V}{\delta t} \Rightarrow \frac{\Delta Q}{Q} =  \left( \frac{\Delta V}{\delta V} + \frac{\Delta t}{\delta t} \right) \leqslant 0,01
+    Q = \frac{\delta V}{\delta t} \Rightarrow \frac{\Delta Q}{Q} =  \left( \frac{\Delta V}{\delta V} + \frac{\Delta t}{\delta t} \right) \leqslant 0,01
 \end{equation}
 
 \begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-		\hline
-		$dV$, л & 3     & 3     & 3     & 3     & 3     & 3     & 3     & 3     \\ \hline
-		$dt$, с & 51,64 & 51,82 & 51,51 & 51,61 & 51,63 & 51,71 & 51,66 & 51,92 \\ \hline
-	\end{tabular}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        $dV$, л & 3     & 3     & 3     & 3     & 3     & 3     & 3     & 3     \\ \hline
+        $dt$, с & 51,64 & 51,82 & 51,51 & 51,61 & 51,63 & 51,71 & 51,66 & 51,92 \\ \hline
+    \end{tabular}
 \end{center}
 
 Согласно описанию установки, класс точности установки равен $1.0$, значит погрешность определения объёма равна $\Delta V = 0,05$ л.
@@ -235,11 +234,11 @@ $P$, Па       & 359,438 & 403,387 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|
 C помощью метода наименьших квадратов найдём угловой коэффициент для начальной части графика, где наблюдается лиинейная зависимость (первые 7 точек):
 
 \begin{equation}
-	\frac{8\eta l}{\pi r^4} = 1406 \; \text{Па} \cdot \text{c/л}, \; \Delta \left( \frac{8\eta l}{\pi r^4} \right) = 19 \; \text{Па} \cdot \text{c/л}
+    \frac{8\eta l}{\pi r^4} = 1406 \; \text{Па} \cdot \text{c/л}, \; \Delta \left( \frac{8\eta l}{\pi r^4} \right) = 19 \; \text{Па} \cdot \text{c/л}
 \end{equation}
 
 \begin{equation}
-	\eta = 1,759 \cdot 10^{-5} \; \text{Па} \cdot \text{c}, \; \frac{\Delta \eta}{\eta} = \frac{\Delta \frac{8\eta l}{\pi r^4}}{\frac{8\eta l}{\pi r^4}} +  \frac{\Delta l}{l} + 4 \frac{\Delta r}{r} = 0,028
+    \eta = 1,759 \cdot 10^{-5} \; \text{Па} \cdot \text{c}, \; \frac{\Delta \eta}{\eta} = \frac{\Delta \frac{8\eta l}{\pi r^4}}{\frac{8\eta l}{\pi r^4}} +  \frac{\Delta l}{l} + 4 \frac{\Delta r}{r} = 0,028
 \end{equation}
 
 Табличное значение вязкости воздуха при температуре во время проведения эксперимента $t = 21 \; C^{\circ}$ равно $\eta = 1,78 \cdot 10^{-5} \; \text{Па} \cdot \text{c}$. То есть мы получили значение, совпадающее в пределах погрешности с теоретическим.
@@ -249,7 +248,7 @@ C помощью метода наименьших квадратов найдё
 Вычислим значение числа Рейнольдса $Re$ для переходной области между ламинарным и турбулентным течениями:
 
 \begin{equation}
-	Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 2400
+    Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 2400
 \end{equation}
 
 Получилась хорошая оценка числа Рейнольдса, совпадающая по порядку величины с ожидаемым значением-оценкой.
@@ -289,11 +288,11 @@ $P$, Па       & 229,161 & 266,832 & 326,477 & 378,274 & 420,653 &          \\ 
 Видно, что следует учитывать первые 6 точек для ламинарного течения. Найдём из МНК значение вязкости:
 
 \begin{equation}
-	\frac{8\eta l}{\pi r^4} = 3387 \; \text{Па} \cdot \text{c/л}, \; \Delta \left( \frac{8\eta l}{\pi r^4} \right) = 58 \; \text{Па} \cdot \text{c/л}
+    \frac{8\eta l}{\pi r^4} = 3387 \; \text{Па} \cdot \text{c/л}, \; \Delta \left( \frac{8\eta l}{\pi r^4} \right) = 58 \; \text{Па} \cdot \text{c/л}
 \end{equation}
 
 \begin{equation}
-	\eta = 1,744 \cdot 10^{-5} \; \text{Па} \cdot \text{c}, \; \frac{\Delta \eta}{\eta} = \frac{\Delta \frac{8\eta l}{\pi r^4}}{\frac{8\eta l}{\pi r^4}} +  \frac{\Delta l}{l} + 4 \frac{\Delta r}{r} = 0,054
+    \eta = 1,744 \cdot 10^{-5} \; \text{Па} \cdot \text{c}, \; \frac{\Delta \eta}{\eta} = \frac{\Delta \frac{8\eta l}{\pi r^4}}{\frac{8\eta l}{\pi r^4}} +  \frac{\Delta l}{l} + 4 \frac{\Delta r}{r} = 0,054
 \end{equation}
 
 Значение получено верное в пределах погрешности, коэффициент корреляции равен $0,989$, что хорошо согласуется с количеством выбранных точек.
@@ -303,7 +302,7 @@ $P$, Па       & 229,161 & 266,832 & 326,477 & 378,274 & 420,653 &          \\ 
 Вычислим значение числа Рейнольдса $Re$ для переходной области между ламинарным и турбулентным течениями:
 
 \begin{equation}
-	Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 2030
+    Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 2030
 \end{equation}
 
 Для диаметра $5$ мм имеем:
@@ -337,7 +336,7 @@ $P$, Па       & 172,656 & 141,264  & 109,872  & 78,48   & \multicolumn{1}{l|}{
 Вычислим значение числа Рейнольдса $Re$ для переходной области между ламинарным и турбулентным течениями:
 
 \begin{equation}
-	Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 1980
+    Re = \frac{4 \rho Q_{cr}}{\pi d \eta} \simeq 1980
 \end{equation}
 
 \subsection{Исследование зависимости P(x)}
@@ -378,7 +377,7 @@ $P$, Па       & 172,656 & 141,264  & 109,872  & 78,48   & \multicolumn{1}{l|}{
 Снимаем данные и строим график зависимости $ln(Q)(ln(d))$:
 
 \begin{equation}
-	Q(r) = C \cdot d^n \Rightarrow ln(Q) = nln(d) + C'
+    Q(r) = C \cdot d^n \Rightarrow ln(Q) = nln(d) + C'
 \end{equation}
 
 Для ламинарного течения $\frac{\Delta P}{l}  = 1,57 \; \text{Па/м}$.
@@ -386,10 +385,10 @@ $P$, Па       & 172,656 & 141,264  & 109,872  & 78,48   & \multicolumn{1}{l|}{
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-$Q$, л/c & 0,0181  & 0,0581  & 0,1383  \\ \hline
-$d$, мм  & 3      & 4      & 5      \\ \hline
-$ln(Q)$  & -4,012 & -2,846 & -1,978 \\ \hline
-$ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
+    $Q$, л/c & 0,0181  & 0,0581  & 0,1383  \\ \hline
+    $d$, мм  & 3      & 4      & 5      \\ \hline
+    $ln(Q)$  & -4,012 & -2,846 & -1,978 \\ \hline
+    $ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
 \end{tabular}
 \end{center}
 
@@ -406,11 +405,11 @@ $ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
-\hline
-$Q$, л/c & 0,0552  & 0,1155  & 0,2031  \\ \hline
-$d$, мм  & 3      & 4      & 5      \\ \hline
-$ln(Q)$  & -2,897 & -2,158 & -1,594 \\ \hline
-$ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
+    \hline
+    $Q$, л/c & 0,0552  & 0,1155  & 0,2031  \\ \hline
+    $d$, мм  & 3      & 4      & 5      \\ \hline
+    $ln(Q)$  & -2,897 & -2,158 & -1,594 \\ \hline
+    $ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
 \end{tabular}
 \end{center}
 
@@ -430,29 +429,28 @@ $ln(d)$  & 1,0986 & 1,3731 & 1,5994 \\ \hline
 Ради интереса найдём длину свободного пробега из рассчитанного значения вязкости:
 
 \begin{equation}
-	\eta = \frac{1}{3}nmv \lambda = \frac{\mu}{3 N_{A}} \frac{P}{kT} \sqrt{\frac{8RT}{\pi \mu}} \lambda = \frac{P}{3}  \sqrt{\frac{8 \mu}{\pi RT}} \lambda \Rightarrow
+    \eta = \frac{1}{3}nmv \lambda = \frac{\mu}{3 N_{A}} \frac{P}{kT} \sqrt{\frac{8RT}{\pi \mu}} \lambda = \frac{P}{3}  \sqrt{\frac{8 \mu}{\pi RT}} \lambda \Rightarrow
 \end{equation}
 
 \begin{equation}
-	\Rightarrow \lambda = \frac{3 \eta}{P} \sqrt{\frac{\pi RT}{8 \mu}} = 99 \; \text{нм}
+    \Rightarrow \lambda = \frac{3 \eta}{P} \sqrt{\frac{\pi RT}{8 \mu}} = 99 \; \text{нм}
 \end{equation}
 
 \begin{equation}
-	\lambda = \frac{4}{\sqrt{2} n \pi d^2} = \frac{4kT}{\sqrt{2} P \pi d^2} \Rightarrow d \simeq 6,13 \cdot 10^{-10} \; \text{м}
+    \lambda = \frac{4}{\sqrt{2} n \pi d^2} = \frac{4kT}{\sqrt{2} P \pi d^2} \Rightarrow d \simeq 6,13 \cdot 10^{-10} \; \text{м}
 \end{equation}
-
 
 
 \section{Заключение}
 
 \begin{enumerate}
-	\item При выполнении данной работы были исследованы различные режимы течения газа по трубкам. На практике получена экспериментальная зависимость разницы давления в различных точках трубки в зависимости от расхода воздуха, идущего через трубку.
-	\item Исследовались условия перехода течения из одного режима (ламинарного) в другой (турбулентный).
-	\item Полученные зависимости разницы давлений от расхода воздуха согласуются с существующей теорией, описывающей движение газов и жидкостей в различных режимах.
-	\item Определены значения вязкости воздуха для трубок различной длины. Полученные значения свопадают с табличными в пределах погрешностей.
-	\item Основной вклад в погрешность итогового значения вязкости внесла погрешность измерения времени, а так же погрешности измерения давлений. Погрешности, связанные с установкой (погрешность линейных размеров установки, диаметра трубок) внесли меньший вклад в итоговое значение погрешности.
-	\item Частично подтверждена теоретическая линейная зависимость падания давления с изменением расстояния от края трубки.
-	\item Подтверждена формула Пуазейля для расхода газа при прохождении через трубку.
+    \item При выполнении данной работы были исследованы различные режимы течения газа по трубкам. На практике получена экспериментальная зависимость разницы давления в различных точках трубки в зависимости от расхода воздуха, идущего через трубку.
+    \item Исследовались условия перехода течения из одного режима (ламинарного) в другой (турбулентный).
+    \item Полученные зависимости разницы давлений от расхода воздуха согласуются с существующей теорией, описывающей движение газов и жидкостей в различных режимах.
+    \item Определены значения вязкости воздуха для трубок различной длины. Полученные значения свопадают с табличными в пределах погрешностей.
+    \item Основной вклад в погрешность итогового значения вязкости внесла погрешность измерения времени, а так же погрешности измерения давлений. Погрешности, связанные с установкой (погрешность линейных размеров установки, диаметра трубок) внесли меньший вклад в итоговое значение погрешности.
+    \item Частично подтверждена теоретическая линейная зависимость падания давления с изменением расстояния от края трубки.
+    \item Подтверждена формула Пуазейля для расхода газа при прохождении через трубку.
 \end{enumerate}
 
 \section{Список используемой литературы}
