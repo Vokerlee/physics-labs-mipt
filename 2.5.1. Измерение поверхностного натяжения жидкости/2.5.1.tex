@@ -1,107 +1,107 @@
 \documentclass[a4paper, 12pt]{article} % тип документа
 
 %%%Библиотеки
-	%\usepackage[warn]{mathtext}	
-	\usepackage[T2A]{fontenc}   %Кодировка
-	\usepackage[utf8]{inputenc} %Кодировка исходного текста
-	\usepackage[english, russian]{babel} %Локализация и переносы
-	\usepackage{caption}
-	\usepackage{gensymb}
-	\usepackage{listings}
-	\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
-	\usepackage[warn]{mathtext}
-	\usepackage[mathscr]{eucal}
-	\usepackage{wasysym}
-	\usepackage{graphicx} %Вставка картинок правильная
-	\usepackage{pgfplots}
-	\usepackage{indentfirst}
-	\usepackage{float}    %Плавающие картинки
-	\usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
-	\usepackage{fancyhdr} %Загрузим пакет
-	\usepackage{lscape}
-	\usepackage{xcolor}
-	\usepackage[normalem]{ulem}
-	
-	\usepackage{titlesec}
-	\titlelabel{\thetitle.\quad}
+    %\usepackage[warn]{mathtext}	
+    \usepackage[T2A]{fontenc}   %Кодировка
+    \usepackage[utf8]{inputenc} %Кодировка исходного текста
+    \usepackage[english, russian]{babel} %Локализация и переносы
+    \usepackage{caption}
+    \usepackage{gensymb}
+    \usepackage{listings}
+    \usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+    \usepackage[warn]{mathtext}
+    \usepackage[mathscr]{eucal}
+    \usepackage{wasysym}
+    \usepackage{graphicx} %Вставка картинок правильная
+    \usepackage{pgfplots}
+    \usepackage{indentfirst}
+    \usepackage{float}    %Плавающие картинки
+    \usepackage{wrapfig}  %Обтекание фигур (таблиц, картинок и прочего)
+    \usepackage{fancyhdr} %Загрузим пакет
+    \usepackage{lscape}
+    \usepackage{xcolor}
+    \usepackage[normalem]{ulem}
+    
+    \usepackage{titlesec}
+    \titlelabel{\thetitle.\quad}
 
-	\usepackage{hyperref}
+    \usepackage{hyperref}
 
 %%%Конец библиотек
 
 %%%Настройка ссылок
-	\hypersetup
-	{
-		colorlinks = true,
-		linkcolor  = blue,
-		filecolor  = magenta,
-		urlcolor   = blue
-	}
+    \hypersetup
+    {
+        colorlinks = true,
+        linkcolor  = blue,
+        filecolor  = magenta,
+        urlcolor   = blue
+    }
 %%%Конец настройки ссылок
 
 
 %%%Настройка колонтитулы
-	\pagestyle{fancy}
-	\fancyhead{}
-	\fancyhead[L]{2.5.1}
-	\fancyhead[R]{Глаз Роман, группа Б01-007}
-	\fancyfoot[C]{\thepage}
+    \pagestyle{fancy}
+    \fancyhead{}
+    \fancyhead[L]{2.5.1}
+    \fancyhead[R]{Глаз Роман, группа Б01-007}
+    \fancyfoot[C]{\thepage}
 %%%конец настройки колонтитулы
 
 
 
 \begin{document}
-						%%%%Начало документа%%%%
+                        %%%%Начало документа%%%%
 
 
 %%%Начало титульника
 \begin{titlepage}
 
-	\newpage
-	\begin{center}
-		\normalsize Московский физико-технический институт \\(госудраственный университет)
-	\end{center}
+    \newpage
+    \begin{center}
+        \normalsize Московский физико-технический институт \\(госудраственный университет)
+    \end{center}
 
-	\vspace{6em}
+    \vspace{6em}
 
-	\begin{center}
-		\Large Лабораторная работа по общему курсу физики\\Термодинамика и молекулярная физика
-	\end{center}
+    \begin{center}
+        \Large Лабораторная работа по общему курсу физики\\Термодинамика и молекулярная физика
+    \end{center}
 
-	\vspace{1em}
+    \vspace{1em}
 
-	\begin{center}
-		\Large \textbf{2.5.1. Измерение поверхностного натяжения жидкости }
-	\end{center}
+    \begin{center}
+        \Large \textbf{2.5.1. Измерение поверхностного натяжения жидкости }
+    \end{center}
 
-	\vspace{2em}
+    \vspace{2em}
 
-	\begin{center}
-		\large Глаз Роман Сергеевич\\
-		Группа Б01-007
-	\end{center}
+    \begin{center}
+        \large Глаз Роман Сергеевич\\
+        Группа Б01-007
+    \end{center}
 
-	\vspace{\fill}
+    \vspace{\fill}
 
-	\begin{center}
-		Долгопрудный \\2021
-	\end{center}
-	
+    \begin{center}
+        Долгопрудный \\2021
+    \end{center}
+    
 \end{titlepage}
 %%%Конец Титульника
 
 
 
 %%%Настройка оглавления и нумерации страниц
-	\thispagestyle{empty}
-	\newpage
-	\tableofcontents
-	\newpage
-	\setcounter{page}{1}
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+    \newpage
+    \setcounter{page}{1}
 %%%Настройка оглавления и нумерации страниц
 
 
-					%%%%%%Начало работы с текстом%%%%%%
+                    %%%%%%Начало работы с текстом%%%%%%
 
 \textbf{Цель работы:} 1) измерение температурной зависимости коэффициента поверхностного натяжения дистиллированной воды с использованием известного коэффициента поверхностного натяжения спирта; 2) определение полной поверхностной энергии и теплоты, необходимой для изотермического образования единицы поверхности жидкости при различной температуре.\\
 
@@ -152,18 +152,18 @@
 Далее вынем иглу, просушим ее и измерим микроскопом ее диаметр (внутренний):
 
 \begin{equation}
-	d = 1.2 \pm 0.05 \text{ мм},
+    d = 1.2 \pm 0.05 \text{ мм},
 \label{eq:2}
 \end{equation}
 
 из табличного значения коэффициента поверхностного натяжения спирта $\sigma = 22.3 \text{ мН/м}$, теперь по формуле (\ref{eq:1}) получим:
 
 \begin{equation}
-	r = \frac{2\sigma}{\Delta P} = 0,643 \text{ мм}
+    r = \frac{2\sigma}{\Delta P} = 0,643 \text{ мм}
 \end{equation}
 
 \begin{equation}
-	\Delta r = 0,015 \text{ мм}
+    \Delta r = 0,015 \text{ мм}
 \end{equation}
 
 Как можно увидить экспериментальный результат совпал с прямым измерение с учётом погрешностей, что говорит о применимости нашей модели.
@@ -173,32 +173,32 @@
 Затем установим иглу в воду так, чтобы она едва касалась воды. Измерим значение давления. Далее опустим иглу до дна, предварительно измерив высоту. Получим значение разности высот, измеренных линейкой:
 
 \begin{equation}
-	h_1 =20 \pm 1 \text{ мм; } \\ h_2 =6 \pm 1 \text{ мм}\\ \Rightarrow \Delta h = 14 \pm 2 \text{ мм.}
+    h_1 =20 \pm 1 \text{ мм; } \\ h_2 =6 \pm 1 \text{ мм}\\ \Rightarrow \Delta h = 14 \pm 2 \text{ мм.}
 \label{eq:4}
 \end{equation}
 
 Теперь посчитаем разность высот из измеренных давлений: $\Delta P = 122 \pm 1,5$ Па, откуда $h = 12,4 \pm 0,2$ мм. Видно, что значение получилось немного меньше, чем измеренное линейкой, но в пределеах погрешности значения совпадают.
 
 \begin{center}
-	\begin{tabular}{|c|c|c|}
-	\hline 
-	№ & $ \langle h_1 \rangle, \text{ мм}$ & $\langle h_2 \rangle, \text{ мм}$ \\ 
-	\hline 
-	1 & 112 & 187 \\ 
-	\hline 
-	2 & 112 & 187 \\ 
-	\hline 
-	3 & 111 & 186 \\ 
-	\hline 
-	4 & 111 & 186 \\ 
-	\hline 
-	5 & 111 & 186 \\ 
-	\hline
-	$ \langle h \rangle$, мм & 111 & 187 \\ 
-	\hline
-	$ \langle P \rangle$, Па & 177 & 299 \\ 
-	\hline 
-	\end{tabular} 
+    \begin{tabular}{|c|c|c|}
+    \hline 
+    № & $ \langle h_1 \rangle, \text{ мм}$ & $\langle h_2 \rangle, \text{ мм}$ \\ 
+    \hline 
+    1 & 112 & 187 \\ 
+    \hline 
+    2 & 112 & 187 \\ 
+    \hline 
+    3 & 111 & 186 \\ 
+    \hline 
+    4 & 111 & 186 \\ 
+    \hline 
+    5 & 111 & 186 \\ 
+    \hline
+    $ \langle h \rangle$, мм & 111 & 187 \\ 
+    \hline
+    $ \langle P \rangle$, Па & 177 & 299 \\ 
+    \hline 
+    \end{tabular} 
 \end{center}
 
 \bigskip
@@ -208,26 +208,26 @@
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-	$t$, $\degree C$ & $20,5$ & $25$ & $30$ & $35$ & $40$ & $45$ & $50,6$ & $55$ 	\\
-	\hline
-	$h$, мм & 132 & 131 & 130 & 129 & 128 & 127 & 125 & 124\\
-	\hline
-	$h$, мм & 132 & 131 & 130 & 129 & 127 & 126 & 125 & 124\\
-	\hline
-	$h$, мм & 132 & 131 & 130 & 128 & 127 & 126 & 125 & 124\\
-	\hline
-	$h$, мм & 132 & 130 & 129 & 128 & 127 & 126 & 125 & 124\\
-	\hline
-	$h$, мм & 131 & 130 & 129 & 128 & 127 & 126 & 125 & 123\\
-	\hline
-	$ \langle h \rangle$, мм & 131,8 & 130,6 & 129,6 & 128,4 & 127,2 & 126,2 & 125 & 123,8\\
-	\hline
-	$\Delta h $, мм & 1,2 & 1,28 & 1,34 & 1,4 & 1,2 & 1,2 & 1 & 1,2\\
-	\hline
-	$\langle P \rangle$, Па & 210,7 & 208,8 & 207,23 & 205,31 & 203,40 & 201,80 & 199,88 & 196,96 \\
-	\hline
-	$\Delta P$, Па & 1,93 & 2,06 & 2,16 & 2,26 & 1,93 & 1,93 & 2,06 & 1,93 \\
-	\hline
+    $t$, $\degree C$ & $20,5$ & $25$ & $30$ & $35$ & $40$ & $45$ & $50,6$ & $55$ 	\\
+    \hline
+    $h$, мм & 132 & 131 & 130 & 129 & 128 & 127 & 125 & 124\\
+    \hline
+    $h$, мм & 132 & 131 & 130 & 129 & 127 & 126 & 125 & 124\\
+    \hline
+    $h$, мм & 132 & 131 & 130 & 128 & 127 & 126 & 125 & 124\\
+    \hline
+    $h$, мм & 132 & 130 & 129 & 128 & 127 & 126 & 125 & 124\\
+    \hline
+    $h$, мм & 131 & 130 & 129 & 128 & 127 & 126 & 125 & 123\\
+    \hline
+    $ \langle h \rangle$, мм & 131,8 & 130,6 & 129,6 & 128,4 & 127,2 & 126,2 & 125 & 123,8\\
+    \hline
+    $\Delta h $, мм & 1,2 & 1,28 & 1,34 & 1,4 & 1,2 & 1,2 & 1 & 1,2\\
+    \hline
+    $\langle P \rangle$, Па & 210,7 & 208,8 & 207,23 & 205,31 & 203,40 & 201,80 & 199,88 & 196,96 \\
+    \hline
+    $\Delta P$, Па & 1,93 & 2,06 & 2,16 & 2,26 & 1,93 & 1,93 & 2,06 & 1,93 \\
+    \hline
 \end{tabular}
 \end{center}
 
@@ -236,16 +236,16 @@
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-	$t$, $\degree C$ & $20,5$ & $25$ & $30$ & $35$ & $40$ & $45$ & $50,6$ & $55$ 	\\
-	\hline
-	$<P>$ & 210,7 & 208,8 & 207,23 & 205,31 & 203,40 & 201,80 & 199,88 & 196,96 \\
-	\hline
-	$\Delta P$, Па & 1,93 & 2,06 & 2,16 & 2,26 & 1,93 & 1,93 & 2,06 & 1,93 \\
-	\hline
-	$\sigma \cdot 10^2$, Н/м & 6,77 & 6,71 & 6,66 & 6,60 & 6,54 & 6,48 & 6,42 & 6,36 \\
-	\hline
-	$\Delta \sigma \cdot 10^2$, Н/м & 0,154 & 0,164 & 0,171 & 0,181 & 0,154 & 0,154 & 0,164 & 0,154 \\
-	\hline
+    $t$, $\degree C$ & $20,5$ & $25$ & $30$ & $35$ & $40$ & $45$ & $50,6$ & $55$ 	\\
+    \hline
+    $<P>$ & 210,7 & 208,8 & 207,23 & 205,31 & 203,40 & 201,80 & 199,88 & 196,96 \\
+    \hline
+    $\Delta P$, Па & 1,93 & 2,06 & 2,16 & 2,26 & 1,93 & 1,93 & 2,06 & 1,93 \\
+    \hline
+    $\sigma \cdot 10^2$, Н/м & 6,77 & 6,71 & 6,66 & 6,60 & 6,54 & 6,48 & 6,42 & 6,36 \\
+    \hline
+    $\Delta \sigma \cdot 10^2$, Н/м & 0,154 & 0,164 & 0,171 & 0,181 & 0,154 & 0,154 & 0,164 & 0,154 \\
+    \hline
 \end{tabular}
 \end{center}
 
@@ -267,40 +267,40 @@
 \smallskip
 
 \begin{equation}
-	\frac{d \sigma}{dT} = -0.137 \text{ мН} \cdot \text{м} / K
+    \frac{d \sigma}{dT} = -0.137 \text{ мН} \cdot \text{м} / K
 \end{equation}
 
 
 \begin{equation}
-	\Delta \frac{d \sigma}{dT} = 0,0067 \text{ мН} \cdot \text{м} / K
+    \Delta \frac{d \sigma}{dT} = 0,0067 \text{ мН} \cdot \text{м} / K
 \end{equation}
 
 Сравним с табличным:
 
 \begin{equation}
-	\frac{d\sigma_t}{dT} = -0.154\ \text{мН} \cdot \text{м} / K
+    \frac{d\sigma_t}{dT} = -0.154\ \text{мН} \cdot \text{м} / K
 \end{equation}
 
 В целом значения сходятся, однако теоретическое значение вышло больше, чем полученное экспериментальное.
 
 \begin{figure}[h]
-	\center{\includegraphics[scale = 0.7]{graph1.png}}
-	\caption{Зависимость коэффициента поверхностного натяжения от температуры}
-	\label{gr:1}
+    \center{\includegraphics[scale = 0.7]{graph1.png}}
+    \caption{Зависимость коэффициента поверхностного натяжения от температуры}
+    \label{gr:1}
 \end{figure}
 
 Теперь, зная все нужные значения, построим графики зависимостей $q(t) = -T \frac{d \sigma}{dT}$ и $\frac{U}{F}(T) = \sigma - T\frac{d \sigma}{dT}$. Видно, что в последнем графике значение поверхностной энергии на единицу площади почти не меняется.
 
 \begin{figure}[h]
-	\center{\includegraphics[scale = 0.7]{graph2.png}}
-	%\caption{Сферическая система координат наглядно}
-	\label{gr:2}
+    \center{\includegraphics[scale = 0.7]{graph2.png}}
+    %\caption{Сферическая система координат наглядно}
+    \label{gr:2}
 \end{figure}
 
 \begin{figure}[h]
-	\center{\includegraphics[scale = 0.7]{graph3.png}}
-	%\caption{Сферическая система координат наглядно}
-	\label{gr:3}
+    \center{\includegraphics[scale = 0.7]{graph3.png}}
+    %\caption{Сферическая система координат наглядно}
+    \label{gr:3}
 \end{figure}
 
 
